@@ -1,0 +1,107 @@
+.ProfileContentContainer {
+  flex: 1;
+  background: #ffdfd3;
+  display: flex;
+}
+
+.ProfileContentContainer > * {
+  flex: 1;
+}
+
+.AvatarInfoSection {
+  // background: #5a443c;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.backgroundContainer {
+  background-image: url("/387556190_341988828203849_1151008598085885728_n.jpg");
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f0f0f0;
+}
+
+.octagonWrap {
+  background: #877069;
+  width: 330px;
+  height: 350px;
+  position: absolute;
+  top: 120px;
+  right: -70px;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.octagon {
+  position: relative;
+  width: 320px;
+  height: 340px;
+  top: 5px;
+  left: 5px;
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.DynamicContent {
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .ProfileContentContainer {
+    flex: 1;
+    background: #ffdfd3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ProfileContentContainer > * {
+    flex: 0;
+  }
+
+  .AvatarInfoSection {
+    // background: #5a443c;
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    width: 100%;
+    height: 200px;
+  }
+
+  .backgroundContainer {
+    background-image: url("/387556190_341988828203849_1151008598085885728_n.jpg");
+    min-height: 150px;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: -55px center;
+    background-color: #e5e2e2;
+    width: 100%;
+  }
+
+  #profImage {
+    width: 200px;
+    height: 220px;
+  }
+
+  .octagonWrap {
+    background: #877069;
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    top: 210px;
+    right: 0.8rem;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+
+  .octagon {
+    position: relative;
+    width: 190px;
+    height: 210px;
+    top: 5px;
+    left: 5px;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+}

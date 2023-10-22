@@ -1,0 +1,55 @@
+.ProfileBannerContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  align-items: center;
+
+  .ProfileNameAndInfo {
+    align-self: center;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    // font-family: "Merienda", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: rgb(90, 66, 87);
+    flex-direction: column;
+  }
+
+  .addtlInfo {
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  .LogoLinks {
+    margin: 0.5rem;
+    & > * {
+      color: rgb(63, 38, 48);
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .ProfileBannerContainer {
+    .ProfileNameAndInfo {
+      gap: 2px;
+      font-size: 2rem;
+      color: rgb(90, 66, 87);
+      flex-direction: column;
+    }
+
+    .addtlInfo {
+      display: flex;
+      font-size: 0.8rem;
+      gap: 1rem;
+    }
+    .LogoLinks {
+      margin: 0.25rem;
+    }
+  }
+}
