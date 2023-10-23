@@ -1,0 +1,51 @@
+.UnderConstruction {
+  background: rgb(218, 206, 206);
+  box-shadow: 5px 10px #412b2b;
+  border: 1px solid rgb(129, 107, 107);
+
+  height: fit-content;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  .header {
+    background: #5e3737;
+    padding: 1rem;
+    align-self: stretch;
+    text-align: center;
+    color: white;
+  }
+
+  .description {
+    padding: 1rem;
+  }
+
+  .a {
+    text-align: center;
+    align-self: center;
+  }
+
+  .buttonContainer {
+    background: #5e3737;
+    padding: 0.2rem 0.5rem;
+    color: white;
+  }
+
+  .buttonContainer:hover {
+    background: white;
+    color: #5e3737;
+  }
+}
+
+@media (max-width: 700px) {
+  .UnderConstruction {
+    margin: 0.5rem;
+
+    .buttonContainer {
+      margin: 0.5rem;
+    }
+  }
+}
